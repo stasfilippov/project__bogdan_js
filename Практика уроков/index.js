@@ -1,10 +1,10 @@
-const myFilms = {
-	triller: 1, 
-	comedy: 2, 
-	horor: 3
-}
+ const post = {
+	title: 'myTitle',
+	likeQty: 3
+ }
 
-myFilms.comedy = 1;
-delete myFilms.triller;
+ console.log (JSON.stringify(post));
 
-console.log(myFilms);
+ const jsonStringified = JSON.stringify(post);
+
+ console.log (JSON.parse(jsonStringified));
