@@ -1,10 +1,5 @@
- const post = {
-	title: 'myTitle',
-	likeQty: 3
- }
+function printMyName () {
+	console.log('Stas');
+} // данная функция будет являтся коллбек-функцией
 
- console.log (JSON.stringify(post));
-
- const jsonStringified = JSON.stringify(post);
-
- console.log (JSON.parse(jsonStringified));
+setTimeout (printMyName, 1000); // колбек функция вызвана в качестве аргумента, внутри другой функции
