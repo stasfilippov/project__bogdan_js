@@ -1,15 +1,17 @@
-const buttonInfo = {
-	text: 'Buy'
+const newPost = (post, addedAt = Date()) => ({ // addedAt -- будет динамически изменятся в зависимости от даты вызова
+	...post,
+	addedAt // использована сокращенная форма записи свойства объекта
+}) // круглые скобки для неявного возврата объекта из функции
+
+const firstPost = {
+	id: 1,
+	author: 'Bogdan'
 }
 
-const buttonStyle = {
-	color: 'Yellow',
-	width: 200
+const secondPost = {
+	id: 2,
+	author: 'Stas'
 }
 
-const button = {
-	...buttonInfo,
-	...buttonStyle
-}
+console.table(newPost (secondPost));
 
-console.table(button)
