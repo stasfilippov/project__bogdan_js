@@ -1,5 +1,15 @@
-function printMyName () {
-	console.log('Stas');
-} // данная функция будет являтся коллбек-функцией
+const buttonInfo = {
+	text: 'Buy'
+}
 
-setTimeout (printMyName, 1000); // колбек функция вызвана в качестве аргумента, внутри другой функции
+const buttonStyle = {
+	color: 'Yellow',
+	width: 200
+}
+
+const button = {
+	...buttonInfo,
+	...buttonStyle
+}
+
+console.table(button)
