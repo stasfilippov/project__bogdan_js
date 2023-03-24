@@ -4,3 +4,7 @@
  *
  * 2. Используйте стрелочную функцию
  */
+
+const helloWorld = () => console.log('Привет, мир!')
+
+setTimeout (helloWorld, 5000)

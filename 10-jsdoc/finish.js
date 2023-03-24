@@ -21,5 +21,4 @@
  */
 const calcNumb = (a, b) => a - b;
 
-
 calcNumb (5, 3);
