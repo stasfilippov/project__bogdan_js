@@ -12,3 +12,13 @@
  *
  * 5. Выведите в консоль значение второй переменной
  */
+
+const myCountry = 'Russia';
+
+console.log(myCountry instanceof String); //false
+
+console.log(typeof(myCountry));
+
+const uprMyCountry = myCountry.toUpperCase();
+
+console.log(uprMyCountry)
