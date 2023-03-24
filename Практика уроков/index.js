@@ -1,17 +1,9 @@
-const newPost = (post, addedAt = Date()) => ({ // addedAt -- будет динамически изменятся в зависимости от даты вызова
-	...post,
-	addedAt // использована сокращенная форма записи свойства объекта
-}) // круглые скобки для неявного возврата объекта из функции
+const myArray = [1, 2, 3]
 
-const firstPost = {
-	id: 1,
-	author: 'Bogdan'
-}
+/* myArray.forEach(el => console.log (el * 2))
 
-const secondPost = {
-	id: 2,
-	author: 'Stas'
-}
+console.log(myArray) */
 
-console.table(newPost (secondPost));
+const newArray = myArray.map(el => el + 2);
 
+console.log(newArray)
