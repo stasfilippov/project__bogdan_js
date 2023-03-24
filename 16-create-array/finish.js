@@ -6,3 +6,13 @@
  *
  * 3. Выведите в консоль длину массива
  */
+
+const myArray = [1, 2, 3]
+console.log(myArray)
+
+const newArray = new Array(1, 2, 3)
+console.log(newArray)
+
+console.log(myArray[0])
+
+console.log(myArray.length)
