@@ -9,9 +9,17 @@
 let myVariable1 = 10
 let myVariable2 = '5'
 
+myVariable2 = +myVariable1;
+if (myVariable1 <= myVariable2) {
+	console.log(true)
+}
 // Напишите код здесь
 
 myVariable1 = '20'
 myVariable2 = 100
 
+myVariable1 = +myVariable1;
+if (myVariable1 <= myVariable2) {
+	console.log(true)
+}
 // Напишите код здесь

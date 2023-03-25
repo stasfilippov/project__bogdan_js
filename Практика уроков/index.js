@@ -1,9 +1,21 @@
-const myArray = [1, 2, 3]
+const userProfile = {
+	name: 'Stas',
+	commentQty: 24,
+	hasSignedAgreement: false
+}
 
-/* myArray.forEach(el => console.log (el * 2))
+const userInfo = ({name, commentQty}) => {
+	if (!commentQty) {
+		return `User ${name} has no comments`
+	} 
+	return `User ${name} has ${commentQty} comments`
+}
 
-console.log(myArray) */
+userInfo(userProfile)
 
-const newArray = myArray.map(el => el + 2);
+/* const { name, commentQty } = userProfile
+const {hasSignedAgreement} = userProfile
 
-console.log(newArray)
+const fruits = ['Apple', 'Banana']
+
+const [fruitsOne, fruitsTwo] = fruits */
