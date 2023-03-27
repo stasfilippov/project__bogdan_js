@@ -8,3 +8,9 @@
  */
 
 const myArray = [1, 2]
+
+myArray[10] = 'abc'
+
+console.log(myArray) //в массиве порядок элкментов важен, поэтому задавая элемент с индксом 10, то между ними создаться пустые свойства
+
+console.log(myArray.length) // 11
