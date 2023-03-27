@@ -1,21 +1,46 @@
-const userProfile = {
-	name: 'Stas',
-	commentQty: 24,
-	hasSignedAgreement: false
+const age = 25
+
+if (age > 18) {
+	console.log('is adult')
+} else if (age >= 12) {
+	console.log('is teeneger')
+} else {
+	console.log('Is child')
 }
 
-const userInfo = ({name, commentQty}) => {
-	if (!commentQty) {
-		return `User ${name} has no comments`
-	} 
-	return `User ${name} has ${commentQty} comments`
+
+const sumPositiveNumbers = (a, b) => {
+	if (typeof a !== 'number' || typeof b !== 'number') {
+		return 'One of the arguments is not a number'
+	}
+
+	if (a <= 0 || b <= 0) {
+		return 'Numbers are not positive'
+	}
+
+	return a + b
 }
 
-userInfo(userProfile)
+const myArray = ['first', 'second', 'third']
 
-/* const { name, commentQty } = userProfile
-const {hasSignedAgreement} = userProfile
+for (let i = 0; i < myArray.length; i++) {
+	console.log(myArray[i])
+}
 
-const fruits = ['Apple', 'Banana']
+const myObject = {
+	x: 10,
+	y: true,
+	z: 'abc'
+}
 
-const [fruitsOne, fruitsTwo] = fruits */
+/* for (const key in myObject) {
+	console.log(key, myObject[key])
+} */
+
+Object.keys(myObject).forEach(key => {
+	console.log(key, myObject[key])
+})
+
+Object.values(myObject).forEach(value => {
+	console.log(value)
+})
