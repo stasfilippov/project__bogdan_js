@@ -17,4 +17,7 @@ function cityInfo (name, index) {
     return `${name} is at the index ${index} in the myCities array`
 }
 
-myCities.forEach(name => console.log(cityInfo(name, myCities.indexOf(name))));
+myCities.forEach((name, index) => console.log(cityInfo(name, index)));
+
+
+// правильнее, тк забыл про имеющиеся параметры в forEach() index!
