@@ -9,10 +9,12 @@
  * и выведите в консоль результат вызова функции
  */
 
+//ВЫПОЛНЕНО
+
 const myCities = ['London', 'New York', 'Singapore']
 
 function cityInfo (name, index) {
-    return `${name} is at the ${index} in the myCities array`
+    return `${name} is at the index ${index} in the myCities array`
 }
 
-console.log(myCities.forEach(cityInfo ()));
+myCities.forEach(name => console.log(cityInfo(name, myCities.indexOf(name))));
