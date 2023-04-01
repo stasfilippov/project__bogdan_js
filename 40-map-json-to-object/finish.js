@@ -15,3 +15,12 @@ const postsJSON = [
   '{"postId":6134,"commentsQuantity":2}',
   '{"postId":2351,"commentsQuantity":8}',
 ]
+
+const newPostJSON = postsJSON.map (element => JSON.parse(element));
+
+console.log(newPostJSON)
+
+console.log(newPostJSON[1]['postId'])
+
+console.log(newPostJSON[3]['commentsQuantity']) 
+//** вариант 2 -- console.log(newPostJSON[newPostJSON.length-1]['commentsQuantity']) */

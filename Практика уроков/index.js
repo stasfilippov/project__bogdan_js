@@ -44,3 +44,8 @@ Object.keys(myObject).forEach(key => {
 Object.values(myObject).forEach(value => {
 	console.log(value)
 })
+
+
+for (Element of Itereble) {
+	// дествие с определнным элементом
+}
